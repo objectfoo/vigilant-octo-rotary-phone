@@ -1,10 +1,24 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import './index.css';
-import App from './App.tsx';
+import "./main.css";
+import "@fontsource/lato/300.css";
+import "@fontsource/lato/400.css";
+import "@fontsource/lato/700.css";
+import "@fontsource/lato/900.css";
+import { createBrowserRouter } from "react-router";
+import { createRoot } from "react-dom/client";
+import { RouterProvider } from "react-router/dom";
+import { StrictMode } from "react";
+import Index from "./Index/Index";
 
-createRoot(document.getElementById('root')!).render(
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Index />,
+  },
+]);
+
+
+createRoot(document.getElementById("root")!).render(
 	<StrictMode>
-		<App />
+		<RouterProvider router={router} />
 	</StrictMode>,
 );
