@@ -1,5 +1,6 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
@@ -28,20 +29,20 @@ export default function Index() {
 						<Button variant="contained">STUFF</Button>
 					</Stack>
 					<Stack direction="row" sx={{ gap: 2 }}>
-						<Button color="secondary" variant="outlined">STUFF</Button>
-						<Button color="secondary" variant="text">STUFF</Button>
-						<Button color="secondary" variant="contained">STUFF</Button>
+						<Button color="secondary" variant="outlined" onClick={() => {}}>STUFF</Button>
+						<Button color="secondary" variant="text" onClick={() => {}}>STUFF</Button>
+						<Button color="secondary" variant="contained"  onClick={() => {}}>STUFF</Button>
 					</Stack>
 				</Stack>
 			</Stack>
 			<Typography gutterBottom>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quos praesentium iste autem eligendi ab eos asperiores. Ipsam impedit hic sed, consequuntur similique itaque inventore nesciunt dolore aliquam cupiditate voluptatum?
+				<Link href="#">Lorem ipsum dolor</Link>, sit amet consectetur adipisicing elit. Ipsum quos praesentium iste autem eligendi ab eos asperiores. Ipsam impedit hic sed, consequuntur similique itaque inventore nesciunt dolore aliquam cupiditate voluptatum?
 			</Typography>
 			<Typography gutterBottom>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quos praesentium iste autem eligendi ab eos asperiores. Ipsam impedit hic sed, consequuntur similique itaque inventore nesciunt dolore aliquam cupiditate voluptatum?
+				<Link href="#">Lorem ipsum dolor</Link>, sit amet consectetur adipisicing elit. Ipsum quos praesentium iste autem eligendi ab eos asperiores. Ipsam impedit hic sed, consequuntur similique itaque inventore nesciunt dolore aliquam cupiditate voluptatum?
 			</Typography>
 			<Typography gutterBottom>
-				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quos praesentium iste autem eligendi ab eos asperiores. Ipsam impedit hic sed, consequuntur similique itaque inventore nesciunt dolore aliquam cupiditate voluptatum?
+				<Link href="#">Lorem ipsum dolor</Link>, sit amet consectetur adipisicing elit. Ipsum quos praesentium iste autem eligendi ab eos asperiores. Ipsam impedit hic sed, consequuntur similique itaque inventore nesciunt dolore aliquam cupiditate voluptatum?
 			</Typography>
 			<Typography gutterBottom>
 				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum quos praesentium iste autem eligendi ab eos asperiores. Ipsam impedit hic sed, consequuntur similique itaque inventore nesciunt dolore aliquam cupiditate voluptatum?

@@ -21,7 +21,7 @@
 				const style = document.createElement("style");
 				style.id = "whs-token-variables";
 				let cssContent = [
-					"@layer mui.global, mui.components, mui.theme, mui.sx, mui ;",
+					"@layer mui.global, mui.components, mui.theme, mui.sx, whs;",
 					"@layer whs {",
 					":root {"
 				].join("\r\n");
@@ -51,7 +51,7 @@
 
 	<body>
 		<div id="root"></div>
-		<!-- <script type="module" src="/src/main.tsx"></script> -->
+		<script type="module" src="/src/main.tsx"></script>
 	</body>
 
 </html>
