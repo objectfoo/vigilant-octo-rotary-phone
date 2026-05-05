@@ -6,47 +6,7 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>VORP</title>
-
-		<!-- inject our whs theme tokens into the dom as json data -->
-		<script>window.WhsTokens = JSON.parse(__USER_DATA__);</script>
-
-		<script>
-			(function injectTokensAsCssVars() {
-				const tokens = window.WhsTokens;
-				if (!tokens) return;
-
-				/* convert all the tokens to css variables - with mui prefix (for now) */
-				// const cssVarPrefix = "whs";
-
-				const style = document.createElement("style");
-				style.id = "whs-token-variables";
-				let cssContent = [
-					"@layer mui.global, mui.components, mui.theme, mui.sx, whs;",
-					"@layer whs {",
-					":root {"
-				].join("\r\n");
-
-				// Recursive function to flatten the JSON into --prefix variables
-				function flatten(obj, path = []) {
-					for (const key in obj) {
-						const val = obj[key];
-						if (typeof val === "object" && val !== null && !Array.isArray(val)) {
-							flatten(val, [...path, key]);
-						} else {
-							const varName = `--${[...path, key].join("-")}`;
-							// Add px to spacing or font sizes if they are pure numbers
-							const unit = (typeof val === "number" && !["opacity", "fontWeight"].includes(key)) ? "px" : "";
-							cssContent += `  ${varName}: ${val}${unit};\n`;
-						}
-					}
-				}
-
-				flatten(tokens);
-				cssContent += "}\n }";
-				style.textContent = cssContent;
-				document.head.appendChild(style);
-			})();
-		</script>
+		__INJECT_WHS_TOKENS__
 	</head>
 
 	<body>

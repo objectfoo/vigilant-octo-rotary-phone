@@ -1,0 +1,42 @@
+<!-- inject our whs theme tokens into the dom as json data -->
+<script id="injectWhsTokenCssVariables">
+	window.WhsTokens = JSON.parse(__USER_DATA__);
+	(function injectTokensAsCssVars() {
+		const tokens = window.WhsTokens;
+		if (!tokens) return;
+
+		// style tag
+		const style = document.createElement("style");
+		style.id = "whs-token-variables";
+
+		// style content
+		let cssContent = [
+			"@layer mui.global, mui.components, mui.theme, mui.sx, whs;",
+			"@layer whs {",
+			":root {"
+		].join("\r\n");
+		cssContent += transformTokensToCssVars(tokens);
+		cssContent += "}\n }";
+		style.textContent = cssContent;
+
+		// append to dom
+		document.head.appendChild(style);
+
+		function transformTokensToCssVars(obj, path = []) {
+			return Object.entries(obj).flatMap(([key, val]) => {
+				const currentPath = [...path, key];
+
+				// If it's a nested object, recurse
+				if (typeof val === "object" && val !== null && !Array.isArray(val)) {
+					return transformTokensToCssVars(val, currentPath);
+				}
+
+				// Otherwise, handle the leaf node
+				const varName = `--${currentPath.join("-")}`;
+				const unit = (typeof val === "number" && !["opacity", "fontWeight"].includes(key)) ? "px" : "";
+				
+				return `  ${varName}: ${val}${unit};`;
+			}).join("\n");
+		}
+	})();
+</script>
