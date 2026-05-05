@@ -6,8 +6,8 @@ import fs from "node:fs";
 const InjectJsonPlugin: PluginOption = {
 	name: "inject-json-plugin",
 	transformIndexHtml(html) {
-		const data = fs.readFileSync("./tokens.json", "utf-8");
-		return html.replace("__USER_DATA__", JSON.stringify(data));
+		const fragment = fs.readFileSync("./partials/_InjectWhsTokens.html", "utf-8");
+		return html.replace("__INJECT_WHS_TOKENS__", fragment);
 	}
 };
 
