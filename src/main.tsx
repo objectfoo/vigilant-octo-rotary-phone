@@ -1,4 +1,3 @@
-import "./main.css";
 import "@fontsource/lato/300.css";
 import "@fontsource/lato/400.css";
 import "@fontsource/lato/700.css";
@@ -8,6 +7,8 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router/dom";
 import { StrictMode } from "react";
 import Index from "./Index/Index";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "./theme";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById("root")!).render(
 	<StrictMode>
-		<RouterProvider router={router} />
+		<ThemeProvider theme={theme}>
+			<RouterProvider router={router} />
+		</ThemeProvider>
 	</StrictMode>,
 );

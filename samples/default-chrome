@@ -1,0 +1,2138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>stuff<title>
+			<link rel="shortcut icon" href="/browser-logo.png">
+			<meta http-equiv="x-ua-compatible" content="ie=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+			<style type='text/css'>
+				@font-face {
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 300;
+					src: local("Lato Light"), local("Lato-Light"), url("/common/fonts/Lato/lato-v13-latin-300.woff2") format("woff2"), url("/common/fonts/Lato/lato-v13-latin-300.woff") format("woff")
+				}
+
+				@font-face {
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 400;
+					src: local("Lato Regular"), local("Lato-Regular"), url("/common/fonts/Lato/lato-v13-latin-regular.woff2") format("woff2"), url("/common/fonts/Lato/lato-v13-latin-regular.woff") format("woff")
+				}
+
+				@font-face {
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 700;
+					src: local("Lato Bold"), local("Lato-Bold"), url("/common/fonts/Lato/lato-v13-latin-700.woff2") format("woff2"), url("/common/fonts/Lato/lato-v13-latin-700.woff") format("woff")
+				}
+
+				@font-face {
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 900;
+					src: local("Lato Black"), local("Lato-Black"), url("/common/fonts/Lato/lato-v13-latin-900.woff2") format("woff2"), url("/common/fonts/Lato/lato-v13-latin-900.woff") format("woff")
+				}
+
+				.chrome-app-content {
+					box-sizing: border-box
+				}
+
+				.chrome-app-content *,
+				.chrome-app-content *::before,
+				.chrome-app-content *::after {
+					box-sizing: inherit
+				}
+
+				a {
+					cursor: pointer
+				}
+			</style>
+
+
+			<style type="text/css">
+				html {
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+				}
+
+				body {
+					overflow-y: scroll;
+				}
+
+				#root {
+					min-height: 500px;
+				}
+			</style>
+
+</head>
+
+<body>
+	<input name="__RequestVerificationToken" type="hidden" value="asdf" />
+	<style type='text/css'>
+		.chrome-client-footer {
+			font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+			box-sizing: border-box
+		}
+
+		.chrome-client-footer *,
+		.chrome-client-footer *::before,
+		.chrome-client-footer *::after {
+			box-sizing: inherit
+		}
+
+		.chrome-client-footer a {
+			text-decoration: none;
+			color: #3557ff
+		}
+
+		.footerLinkHoverBehavior {
+			text-decoration: underline
+		}
+
+		.footerLinkHoverBehavior:hover {
+			text-decoration: none
+		}
+
+		.chrome-footer {
+			font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, auto));
+			grid-auto-rows: auto;
+			padding: 40px 16px 16px 16px
+		}
+
+		@media only screen and (max-width:996px) {
+			.chrome-footer {
+				padding: 16px
+			}
+		}
+
+		.chrome-footer .chrome-footer__link-container {
+			align-items: center;
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			display: inline-flex;
+			gap: 4px;
+			font-size: 12px;
+			margin-left: 8px;
+			margin-right: 8px;
+			margin-top: 22px
+		}
+
+		.chrome-footer .chrome-footer__link-container>li {
+			display: inline-flex
+		}
+
+		@media only screen and (max-width:600px) {
+			.chrome-footer .chrome-footer__link-container {
+				transform: translateX(-8px);
+				margin: 0
+			}
+		}
+
+		.chrome-footer .chrome-footer-item {
+			text-decoration: underline;
+			color: #3557ff;
+			display: inline-block;
+			padding: 8px;
+			font-size: 12px;
+			line-height: 1
+		}
+
+		.chrome-footer .chrome-footer-item:hover {
+			text-decoration: none
+		}
+
+		.chrome-footer .chrome-footer-language-link {
+			text-decoration: underline;
+			color: #3557ff;
+			padding: 8px;
+			font-size: 12px;
+			line-height: 1;
+			background-color: transparent;
+			display: inline-block;
+			cursor: pointer;
+			border: none;
+			font-family: inherit
+		}
+
+		.chrome-footer .chrome-footer-language-link:hover {
+			text-decoration: none
+		}
+
+		.chrome-footer .chrome-footer-line {
+			font-size: 12px;
+			color: #545456;
+			flex-wrap: nowrap
+		}
+
+		.chrome-footer .chrome-footer-line.chrome-footer-line--logo-flex {
+			margin-bottom: 4px;
+			display: flex;
+			align-items: center
+		}
+
+		@media only screen and (max-width:600px) {
+			.chrome-footer .chrome-footer-line.chrome-footer-line--logo-flex {
+				align-items: flex-start;
+				flex-direction: column
+			}
+		}
+
+		.chrome-footer .chrome-footer-legal {
+			line-height: 1.4
+		}
+
+		.chrome-footer .chrome-footer-legal a {
+			color: #3557ff;
+			text-decoration: underline
+		}
+
+		.chrome-footer .chrome-footer-legal a:hover {
+			text-decoration: none
+		}
+
+		.chrome-footer .chrome-footer-legal .footerLinkCell {
+			display: inline
+		}
+
+		.chrome-footer .chrome-footer-link {
+			color: #3557ff;
+			text-decoration: underline
+		}
+
+		.chrome-footer .chrome-footer-link:hover {
+			text-decoration: none
+		}
+
+		.chrome-footer .chrome-footer-webmdone-logo {
+			display: inline-block;
+			width: 124px;
+			height: 30px;
+			margin: 4px 4px 3px 0px
+		}
+
+		.chrome-footer .accreditation-footer {
+			grid-area: 1 / 2 / span 5 / -1
+		}
+
+		.chrome-footer .accreditation-footer .accreditation-footer-item-group {
+			justify-content: flex-end;
+			list-style-type: none;
+			padding-left: 0;
+			margin: 0;
+			display: flex;
+			gap: 8px
+		}
+
+		@media only screen and (max-width:996px) {
+			.chrome-footer .accreditation-footer .accreditation-footer-item-group {
+				justify-content: flex-start;
+				margin-top: 24px
+			}
+		}
+
+		.chrome-footer .accreditation-footer li,
+		.chrome-footer .accreditation-footer .accreditation-footer-item {
+			display: inline-block
+		}
+
+		@media only screen and (max-width:996px) {
+			.chrome-footer {
+				display: block
+			}
+		}
+	</style>
+	<style type='text/css'>
+		.simple-overlay.whsInterstitialModal {
+			height: 120%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			background: #000000 50% 50% repeat-x;
+			opacity: 0.54;
+			filter: alpha(opacity=54);
+			z-index: 9999
+		}
+
+		.simple-overlay.whsInterstitialModal .simple-modal {
+			background: #fff;
+			min-height: 100px;
+			min-width: 280px;
+			position: fixed;
+			top: 24px;
+			z-index: 10000
+		}
+
+		.simple-overlay.whsInterstitialModal .simple-modal .close {
+			background-image: url("/themes/common/images/sprite_common_WCAG.png");
+			background-position: -98px top;
+			background-repeat: no-repeat;
+			background-size: 240px 320px;
+			height: 30px;
+			width: 30px;
+			position: absolute;
+			cursor: pointer;
+			top: -15px;
+			right: -15px;
+			z-index: 10001
+		}
+
+		@media screen and (-webkit-min-device-pixel-ratio:1.3), (min-device-pixel-ratio:1.3), (min-resolution:1.3dppx) {
+			.simple-overlay.whsInterstitialModal .simple-modal .close {
+				background-image: url("/themes/common/images/sprite_common@2x.png")
+			}
+		}
+
+		body.whsInterstitialModal-open {
+			overflow: hidden
+		}
+
+		.guard-start,
+		.guard-end {
+			position: fixed;
+			top: 50%;
+			margin-top: -150px
+		}
+
+		.interstitialModal.whsInterstitialModal {
+			position: fixed;
+			max-width: 100%;
+			min-height: 100px;
+			padding: 20px;
+			top: 50%;
+			left: 50%;
+			margin-top: -150px;
+			background-color: white;
+			box-sizing: border-box;
+			z-index: 9999;
+			text-align: right;
+			font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+			border-radius: 4px
+		}
+
+		@media screen and (max-width:550px) {
+			.interstitialModal.whsInterstitialModal {
+				width: auto !important;
+				top: 0px !important;
+				left: 0px !important;
+				right: 0px !important;
+				bottom: 0px !important;
+				margin: 2.5% !important;
+				overflow: auto
+			}
+		}
+
+		.interstitialModal.whsInterstitialModal label,
+		.interstitialModal.whsInterstitialModal p {
+			padding: 0;
+			margin: 0
+		}
+
+		.interstitialModal.whsInterstitialModal .hideInFutureCheck {
+			margin-bottom: 16px;
+			font-size: 14px;
+			line-height: 20px;
+			display: block;
+			text-align: left;
+			color: rgba(0, 0, 0, 0.87)
+		}
+
+		.interstitialModal.whsInterstitialModal .hideInFutureCheck input {
+			float: left
+		}
+
+		.interstitialModal.whsInterstitialModal .beforeYouGo {
+			display: block !important;
+			text-align: left;
+			color: rgba(0, 0, 0, 0.87);
+			font-size: 21px;
+			font-weight: 500;
+			font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+			line-height: 24px;
+			margin: 0 0 16px 0
+		}
+
+		.interstitialModal.whsInterstitialModal .interstitial-description {
+			color: rgba(0, 0, 0, 0.54);
+			font-size: 16px;
+			line-height: 24px;
+			text-align: left;
+			margin: 0 0 24px 0
+		}
+
+		.interstitialModal.whsInterstitialModal .interstitial-buttons {
+			display: flex;
+			flex-direction: row-reverse
+		}
+
+		.interstitialModal.whsInterstitialModal .ok.bttn--accessible {
+			color: #fff;
+			background-color: #0078BF;
+			box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 3px 1px -2px rgba(0, 0, 0, 0.12);
+			padding: 8px 16px;
+			font-size: 0.875rem;
+			min-width: 64px;
+			transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+			min-height: 36px;
+			box-sizing: border-box;
+			line-height: 1.4em;
+			font-weight: 500;
+			border-radius: 4px;
+			text-transform: uppercase;
+			cursor: pointer;
+			margin: 0;
+			border: 0;
+			display: inline-flex;
+			outline: none;
+			position: relative;
+			user-select: none;
+			align-items: center;
+			vertical-align: middle;
+			justify-content: center;
+			text-decoration: none;
+			-webkit-tap-highlight-color: transparent
+		}
+
+		.interstitialModal.whsInterstitialModal .ok.bttn--accessible:focus-visible {
+			outline: 5px auto Highlight;
+			outline: 5px auto -webkit-focus-ring-color
+		}
+
+		.interstitialModal.whsInterstitialModal .cancel.bttn--accessible_secondary {
+			cursor: pointer;
+			margin: 0 10px 0 0;
+			border: 0;
+			display: inline-flex;
+			outline: none;
+			position: relative;
+			user-select: none;
+			align-items: center;
+			vertical-align: middle;
+			justify-content: center;
+			text-decoration: none;
+			background-color: transparent;
+			-webkit-tap-highlight-color: transparent;
+			color: rgba(0, 0, 0, 0.87);
+			padding: 8px 16px;
+			font-size: 0.875rem;
+			min-width: 64px;
+			transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+			min-height: 36px;
+			box-sizing: border-box;
+			line-height: 1.4em;
+			font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+			font-weight: 500;
+			border-radius: 4px;
+			text-transform: uppercase
+		}
+
+		.interstitialModal.whsInterstitialModal .cancel.bttn--accessible_secondary:focus-visible {
+			outline: 5px auto Highlight;
+			outline: 5px auto -webkit-focus-ring-color
+		}
+
+		body {
+			background-color: #fff;
+			padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+			margin: 0;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale
+		}
+
+		.chrome-wrapper {
+			background-color: #fff;
+			margin: 0 auto;
+			max-width: 997px
+		}
+
+		.chrome-header {
+			font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+			overflow-y: hidden
+		}
+
+		.chrome-header.no-navigation {
+			padding-left: 8px
+		}
+
+		.chrome-header-top-row {
+			box-sizing: border-box;
+			padding-left: 146px;
+			justify-content: space-between;
+			background-color: #fff;
+			display: flex;
+			flex-direction: row;
+			height: 64px;
+			max-width: 997px;
+			min-width: 320px;
+			position: fixed;
+			width: 100%;
+			z-index: 999
+		}
+
+		.chrome-header-top-row--floating {
+			box-shadow: 0px 4px 3px -3px rgba(0, 0, 0, 0.25)
+		}
+
+		.chrome-page-title {
+			font-size: 14px;
+			font-weight: 400
+		}
+
+		.chrome-navbar-item {
+			background-color: transparent;
+			flex: none;
+			padding: 12px;
+			font-size: 1.5rem;
+			text-align: center;
+			border-radius: 50%;
+			border: 0;
+			margin: 0;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			text-decoration: none;
+			-moz-user-select: none;
+			user-select: none;
+			cursor: pointer;
+			outline-offset: -1px
+		}
+
+		.chrome-navbar-item--button {
+			padding: 0;
+			margin: 0;
+			width: 48px;
+			height: 48px;
+			background-color: transparent;
+			border: 0
+		}
+
+		.chrome-logo-container {
+			flex: auto;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center
+		}
+
+		.chrome-logo-container a {
+			outline-offset: -1px;
+			display: flex
+		}
+
+		.chrome-logo,
+		.chrome-secondary-logo {
+			display: inline-block;
+			height: 48px;
+			width: 292px;
+			margin: 8px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: contain
+		}
+
+		.chrome-logo-with-secondary.chrome-logo {
+			background-position: right center;
+			width: 138px
+		}
+
+		.chrome-logo-with-secondary.chrome-secondary-logo {
+			background-position: left center;
+			width: 138px
+		}
+
+		.chrome-logo-no-nav.chrome-logo,
+		.chrome-logo-no-nav.chrome-secondary-logo {
+			background-position: left center
+		}
+
+		.chrome-header-col {
+			align-items: center;
+			display: flex;
+			flex-basis: 146px;
+			flex-direction: row;
+			flex-grow: 0;
+			flex-shrink: 1
+		}
+
+		.chrome-header-col--secondary {
+			justify-content: flex-end
+		}
+
+		.chrome-menu {
+			position: relative
+		}
+
+		.chrome-menu--open.chrome-menu-wrapper {
+			display: block
+		}
+
+		.chrome-menu-position {
+			position: absolute;
+			top: 32px;
+			left: -169px
+		}
+
+		.chrome-menu-wrapper {
+			display: none;
+			margin-top: 8px;
+			margin-bottom: 8px;
+			position: absolute;
+			top: 0;
+			max-height: 90vh;
+			overflow-y: auto;
+			box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+			background-color: #fbfbfb;
+			border-radius: 4px
+		}
+
+		.chrome-menu-content {
+			list-style-type: none;
+			padding-left: 0px;
+			margin: 0;
+			padding-top: 8px;
+			padding-bottom: 8px
+		}
+
+		.chrome-segment-nav-4-items .chrome-nav-item--list:first-child {
+			display: none
+		}
+
+		.chrome-nav-messages-berry {
+			position: absolute;
+			right: 4px;
+			top: 4px;
+			border-radius: 64px;
+			min-width: 8px;
+			width: auto;
+			height: 20px;
+			padding: 0 6px;
+			align-content: center;
+			text-align: center;
+			background: #3557FF;
+			color: #FFFFFF;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 12px;
+			letter-spacing: 0.14px
+		}
+
+		.chrome-nav-berry-messages,
+		.chrome-nav-berry-coaching {
+			position: absolute;
+			right: 4px;
+			top: 4px;
+			border-radius: 64px;
+			min-width: 8px;
+			width: auto;
+			height: 20px;
+			padding: 0 6px;
+			align-content: center;
+			text-align: center;
+			background: #3557ff;
+			color: #ffffff;
+			font-size: 12px;
+			font-weight: 500;
+			line-height: 12px;
+			letter-spacing: 0.14px;
+			right: 10px;
+			top: 9px;
+			min-width: 34px
+		}
+
+		.chrome-nav-item {
+			color: #222;
+			text-decoration: none;
+			font-size: 14px;
+			box-sizing: content-box
+		}
+
+		.chrome-nav-item--segment {
+			outline-offset: 3px;
+			background-color: #dedede;
+			padding: 8px;
+			flex: 1 1 100px;
+			overflow: hidden;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			word-break: break-word;
+			word-wrap: break-word;
+			overflow-wrap: break-word
+		}
+
+		.chrome-ripple {
+			position: relative;
+			overflow: hidden
+		}
+
+		.chrome-ripple:after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			pointer-events: none;
+			background-image: radial-gradient(circle, #fff 15%, transparent 15.01%);
+			background-repeat: no-repeat;
+			background-position: 50%;
+			transform: scale(10, 10);
+			opacity: 0;
+			transition: transform 0.5s, opacity 1s
+		}
+
+		.chrome-ripple:active:after {
+			transform: scale(0, 0);
+			opacity: 0.3;
+			transition: 0s
+		}
+
+		.chrome-nav-item--list {
+			display: block;
+			padding: 12px 16px;
+			width: 180px
+		}
+
+		.chrome-nav-item--list:focus-visible {
+			outline-offset: -2px
+		}
+
+		.chrome-nav-item--list.selected,
+		.chrome-nav-item--list.highlighted {
+			background-color: rgba(0, 0, 0, 0.14)
+		}
+
+		.chrome-nav-item--list:hover {
+			background-color: rgba(0, 0, 0, 0.07)
+		}
+
+		.chrome-nav-item--separator {
+			border-bottom: 1px solid #aaa
+		}
+
+		.chrome-segment-nav-container {
+			margin-top: 64px;
+			padding-top: 8px;
+			padding-bottom: 24px;
+			display: flex;
+			justify-content: center
+		}
+
+		.chrome-segment-nav {
+			display: inline-flex;
+			margin-left: 8px;
+			margin-right: 8px;
+			flex: 0 1 420px
+		}
+
+		.chrome-segment-nav-4-items {
+			flex: 0 1 550px
+		}
+
+		.chrome-nav-item--segment+.chrome-nav-item--segment {
+			margin-left: 8px
+		}
+
+		.chrome-nav-item--segment:first-child {
+			margin-left: 0;
+			border-top-left-radius: 6px;
+			border-bottom-left-radius: 6px
+		}
+
+		.chrome-nav-item--segment:last-child {
+			border-top-right-radius: 6px;
+			border-bottom-right-radius: 6px
+		}
+
+		ul.chrome-segment-nav {
+			padding-left: 0;
+			margin: 0;
+			list-style-type: none
+		}
+
+		ul.chrome-segment-nav li+li {
+			margin-left: 8px
+		}
+
+		ul.chrome-segment-nav li {
+			flex: 1 1 50%;
+			display: flex
+		}
+
+		ul.chrome-segment-nav li>a {
+			flex-grow: 1
+		}
+
+		ul.chrome-segment-nav li:first-child .chrome-nav-item--segment {
+			border-radius: 6px 0 0 6px
+		}
+
+		ul.chrome-segment-nav li:last-child .chrome-nav-item--segment {
+			border-radius: 0 6px 6px 0
+		}
+
+		.no-navigation .chrome-header {
+			margin-bottom: 16px
+		}
+
+		.visibleOnTab {
+			display: none
+		}
+
+		.chrome-skip-to-content-link {
+			left: 50%;
+			position: absolute;
+			transform: translate(-50%, -100%);
+			transition: transform 250ms;
+			outline: none;
+			border: 1px solid #191919;
+			border-radius: 4px;
+			text-decoration: none;
+			color: #191919;
+			background-color: #fff;
+			padding: 8px 12px;
+			font-size: 16px;
+			z-index: 1121;
+			font-family: "Lato", "Helvetica Neue", Arial, sans-serif
+		}
+
+		.chrome-skip-to-content-link:focus {
+			transform: translate(-50%, 8px);
+			box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12)
+		}
+
+		#chrome-skip-to-content {
+			scroll-margin-top: 64px
+		}
+
+		@media (min-width:600px) {
+			.chrome-skip-to-content-link {
+				left: 40px;
+				transform: translate(0px, -100%)
+			}
+
+			.chrome-skip-to-content-link:focus {
+				transform: translate(0px, 8px);
+				box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2), 0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12)
+			}
+
+			#chrome-skip-to-content {
+				scroll-margin-top: 80px
+			}
+		}
+
+		@media (max-width:599px) {
+			.no-navigation .chrome-header {
+				margin-bottom: 8px
+			}
+
+			.chrome-segment-nav-container {
+				margin-top: 48px
+			}
+
+			.chrome-header-top-row {
+				padding-left: 0;
+				height: 48px
+			}
+
+			.chrome-logo-container {
+				justify-content: flex-start
+			}
+
+			.chrome-logo,
+			.chrome-secondary-logo {
+				height: 32px;
+				width: 160px;
+				background-position: left center
+			}
+
+			.chrome-logo-with-secondary.chrome-logo {
+				width: 92px;
+				margin-right: 4px
+			}
+
+			.chrome-logo-with-secondary.chrome-secondary-logo {
+				width: 92px;
+				margin-left: 4px
+			}
+
+			.chrome-nav-item--segment+.chrome-nav-item--segment {
+				margin-left: 4px
+			}
+		}
+
+		@media (max-width:360px) {
+			.chrome-segment-nav-4-items {
+				flex: 0 1 420px
+			}
+
+			.chrome-segment-nav-4-items .chrome-nav-item--segment:last-child {
+				display: none
+			}
+
+			.chrome-segment-nav-4-items .chrome-nav-item--list:first-child {
+				display: block
+			}
+		}
+	</style>
+	<style>
+		.chrome-nav-item--segment.selected {
+			background-color: #3557ff;
+			color: #FFFFFF;
+			font-weight: bold;
+		}
+
+		.chrome-footer a,
+		.chrome-footer button {
+			color: #3557ff;
+		}
+
+		.chrome-footer button {
+			margin: 0;
+		}
+
+		.chrome-client-footer a {
+			color: #3557ff;
+		}
+	</style>
+
+	<div class="chrome-wrapper shows-navigation">
+		<a class="chrome-skip-to-content-link" href="#chrome-skip-to-content">SKIP TO CONTENT</a>
+		<nav class="chrome-header">
+			<div class="chrome-header-top-row" id="chrome-header-top-row">
+				<div class="chrome-logo-container">
+					<a href="/Home" id="chrome-header-logo-link" onclick="window.chromeOne.logChromeNavClick('SponsorLogo')"
+						aria-label="Personal Health Manager home, provided by: Titan Test Client" )">
+						<div id="chrome-primary-logo" role="presentation" class="chrome-logo chrome-logo-with-secondary"
+							style="background-image: url(/titan/common/images/logo.png)"></div>
+						<div id="chrome-secondary-logo" role="presentation" class="chrome-secondary-logo chrome-logo-with-secondary"
+							style="background-image: url(/titan/common/images/secondary-logo.png)"></div>
+					</a>
+				</div>
+
+				<div class="chrome-header-col chrome-header-col--secondary">
+					<div class="chrome-menu">
+						<a class="chrome-nav-messages chrome-navbar-item chrome-navbar-item--link" id="chrome-nav-Messages"
+							href="/LaunchTool/86" aria-label="Messages" onclick="window.chromeOne.logChromeNavClick('Messages')">
+							<svg focusable="false" role="img" aria-hidden="true" width="24px" height="24px" viewBox="0 0 24 24"
+								version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<g id="States" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+									<g id="New-Chrome-Flow" transform="translate(-3656.000000, -233.000000)">
+										<g id="✱-/-chrome/header/appbar/desktop-home" transform="translate(3132.000000, 213.000000)">
+											<g id="Group-5">
+												<g id="mail_outline-24px" transform="translate(524.000000, 20.000000)">
+													<polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+													<path
+														d="M20,4 L4,4 C2.9,4 2.01,4.9 2.01,6 L2,18 C2,19.1 2.9,20 4,20 L20,20 C21.1,20 22,19.1 22,18 L22,6 C22,4.9 21.1,4 20,4 Z M20.6,18.4 L3.6,18.4 L3.6,7.10761207 L12.1,12.1586451 L20.6,7.10761207 L20.6,18.4 Z M12,10.4 L3.6,5.4 L20.4,5.4 L12,10.4 Z"
+														id="Shape" fill="#000000" fill-rule="nonzero"></path>
+												</g>
+											</g>
+										</g>
+									</g>
+								</g>
+							</svg>
+
+							<div id="chrome-has-messages-indicator" class="chrome-nav-messages-berry" aria-hidden="true"
+								style="display: none">You have messages.</div>
+						</a>
+					</div>
+
+
+					<div class="chrome-menu">
+						<button id="kebab-menu-toggle" class="chrome-navbar-item chrome-navbar-item--button" aria-label="More pages"
+							aria-haspopup="menu" aria-controls="kebab-menu-list">
+							<svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" aria-hidden="true"
+								focusable="false">
+								<path d="M0 0h24v24H0V0z" fill="none" />
+								<path
+									d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z" />
+							</svg>
+						</button>
+						<div class="chrome-menu-position">
+							<div class="chrome-menu-wrapper" id="kebab-menu">
+								<ul id="kebab-menu-list" class="chrome-menu-content " role="menu">
+									<li role="none">
+										<a role="menuitem" class="chrome-nav-coaching chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/LaunchTool/1261" onclick="window.chromeOne.logChromeNavClick('Coaching')">
+											Coaching
+										</a>
+									</li>
+									<li role="none">
+										<a role="menuitem" class="chrome-nav-community chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/LaunchTool/10001759" onclick="window.chromeOne.logChromeNavClick('Community')">
+											Community
+										</a>
+									</li>
+									<li role="none">
+										<a role="menuitem"
+											class="chrome-nav-content hub chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/LaunchTool/64001399" onclick="window.chromeOne.logChromeNavClick('Content Hub')">
+											Content Hub
+										</a>
+									</li>
+									<li role="none">
+										<a role="menuitem"
+											class="chrome-nav-dailyhabits chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/LaunchTool/10000032" onclick="window.chromeOne.logChromeNavClick('DailyHabits')">
+											Daily Habits
+										</a>
+									</li>
+									<li role="none">
+										<a role="menuitem"
+											class="chrome-nav-healthassessment chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/LaunchTool/3567" onclick="window.chromeOne.logChromeNavClick('HealthAssessment')">
+											ONE Health Assessment
+										</a>
+									</li>
+									<li role="none">
+										<a role="menuitem"
+											class="chrome-nav-healthgoals chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/LaunchTool/10002737" onclick="window.chromeOne.logChromeNavClick('HealthGoals')">
+											Health Goals
+										</a>
+									</li>
+									<li role="none">
+										<a role="menuitem"
+											class="chrome-nav-healthrecord chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/LaunchTool/58" onclick="window.chromeOne.logChromeNavClick('HealthRecord')">
+											Health Record
+										</a>
+									</li>
+									<li role="none">
+										<a role="menuitem"
+											class="chrome-nav-healthresources chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/!health-resources" onclick="window.chromeOne.logChromeNavClick('HealthResources')"
+											data-orientation="health-resources">
+											Resources
+										</a>
+									</li>
+									<li role="none">
+										<a role="menuitem" class="chrome-nav-rewards chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/Rewards/Lobby" onclick="window.chromeOne.logChromeNavClick('Rewards')">
+											Rewards
+										</a>
+									</li>
+									<li role="none">
+										<a role="menuitem"
+											class="chrome-nav-sidequests chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/LaunchTool/64001400" onclick="window.chromeOne.logChromeNavClick('SideQuests')">
+											Side Quests
+										</a>
+									</li>
+									<li role="none">
+										<a role="menuitem"
+											class="chrome-nav-syncdevicesandapps chrome-nav-item chrome-nav-item--list chrome-ripple chrome-nav-item--separator"
+											href="/LaunchTool/60000022" onclick="window.chromeOne.logChromeNavClick('SyncDevicesAndApps')">
+											Sync Devices &amp; Apps
+										</a>
+									</li>
+
+									<li role="none">
+										<a role="menuitem" class="chrome-nav-policies chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/Policies" onclick="window.chromeOne.logChromeNavClick('Policies')">
+											Policies
+										</a>
+									</li>
+									<li role="none">
+										<a role="menuitem"
+											class="chrome-nav-settings chrome-nav-item chrome-nav-item--list chrome-ripple chrome-nav-item--separator"
+											href="/LaunchTool/64" onclick="window.chromeOne.logChromeNavClick('Settings')">
+											Settings
+										</a>
+									</li>
+
+									<li role="none">
+										<a role="menuitem" class="chrome-nav-signout chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/main/logout.aspx" onclick="window.chromeOne.logChromeNavClick('Signout')">
+											Sign Out
+										</a>
+									</li>
+									<li role="none">
+										<a role="menuitem" class="chrome-nav-contactus chrome-nav-item chrome-nav-item--list chrome-ripple "
+											href="/ContactUs" onclick="window.chromeOne.logChromeNavClick('ContactUs')">
+											Contact Us
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="chrome-segment-nav-container">
+				<ul class="chrome-segment-nav " id="segment-menu">
+					<li role="none">
+						<a class="chrome-nav-home chrome-nav-item chrome-nav-item--segment chrome-ripple" tabindex="0" href="/Home"
+							onclick="window.chromeOne.logChromeNavClick('Home')">
+							My Health
+						</a>
+					</li>
+					<li role="none">
+						<a class="chrome-nav-benefits chrome-nav-item chrome-nav-item--segment chrome-ripple" tabindex="0"
+							href="/!streams/Benefits" onclick="window.chromeOne.logChromeNavClick('Benefits')">
+							My Sponsor
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="chrome-content" id="chrome-skip-to-content">
+			<div class="chrome-app-content" role="main">
+
+
+
+
+				<div id="root"></div>
+				<style type='text/css'>
+					.loading-error-container {
+						text-align: center;
+						font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+						min-height: 500px;
+						display: none
+					}
+
+					.has-loading-error #root {
+						min-height: auto
+					}
+
+					.has-loading-error .loading-error-container {
+						display: block
+					}
+
+					.loading-error-content {
+						padding: 24px 8px 150px 8px;
+						display: flex;
+						background-color: #FAFAFA;
+						flex-direction: column;
+						align-items: center
+					}
+
+					.loading-error-title {
+						margin-top: 16px;
+						margin-bottom: 32px;
+						font-size: 48px;
+						font-weight: 300
+					}
+
+					@media screen and (max-width:600px) {
+						.loading-error-title {
+							font-size: 28px;
+							font-weight: 400px;
+							margin-bottom: 24px
+						}
+					}
+
+					.loading-error-subtitle {
+						font-size: 24px;
+						margin-bottom: 32px
+					}
+
+					.loading-error-image {
+						margin-bottom: 32px;
+						width: 354px;
+						height: 214px
+					}
+
+					@media screen and (max-width:600px) {
+						.loading-error-image {
+							width: 319px;
+							height: 192px
+						}
+					}
+
+					.loading-error-message {
+						font-size: 16px;
+						margin-bottom: 40px;
+						max-width: 300px
+					}
+
+					.loading-error-button {
+						align-items: center;
+						background-color: #3557ff;
+						border-radius: 4px;
+						border: 0;
+						box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+						box-sizing: border-box;
+						color: #ffffff;
+						cursor: pointer;
+						display: inline-flex;
+						font-size: 14px;
+						font-weight: 500;
+						justify-content: center;
+						letter-spacing: 0.02857em;
+						line-height: 1.75;
+						margin: 0;
+						padding: 6px 16px;
+						text-transform: uppercase
+					}
+
+					.loading-error-button--ripple {
+						overflow: hidden;
+						position: relative
+					}
+
+					.loading-error-button--ripple:after {
+						background-image: radial-gradient(circle, #fff 15%, transparent 15.01%);
+						background-position: 50%;
+						background-repeat: no-repeat;
+						content: '';
+						display: block;
+						height: 100%;
+						left: 0;
+						opacity: 0;
+						pointer-events: none;
+						position: absolute;
+						top: 0;
+						transform: scale(10, 10);
+						transition: transform 0.5s, opacity 1s;
+						width: 100%
+					}
+
+					.loading-error-button--ripple:active:after {
+						opacity: 0.3;
+						transform: scale(0, 0);
+						transition: 0s
+					}
+				</style>
+
+				<div id="loading-error" class="loading-error-container">
+					<h1 class="loading-error-title">Error Loading Page</h1>
+					<div class="loading-error-content">
+						<p class="loading-error-subtitle">Something is off...</p>
+						<svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-labelledby="loading-error-image-title"
+							class="loading-error-image" viewBox="0 0 354 214" focusable="false" tab-index="-1" role="img">
+							<title id="loading-error-image-title">Goldy the goldfish</title>
+							<path fill="#F3F3F3" fill-rule="evenodd"
+								d="m116.153 3.707 92.464 81.542a6.39 6.39 0 0 1 2.069 3.699c5.215 29.89-2.57 61.759-23.997 86.615-27.907 32.373-71.132 43.488-109.466 32.087a10.392 10.392 0 0 1-3.904-2.162l-59.528-52.497a10.391 10.391 0 0 1-2.632-3.601C-4.814 113.101.536 69.268 28.466 37.566 50.396 12.673 81.49.662 112.228 2.118a6.386 6.386 0 0 1 3.925 1.59Z"
+								clip-rule="evenodd" />
+							<path fill="#75B2BE" fill-rule="evenodd"
+								d="M10.056 149.622c.468 1.422 1.5 2.595 2.628 3.586l59.47 52.304a10.33 10.33 0 0 0 3.896 2.153c38.297 11.36 81.483.288 109.362-31.967.257-.297.517-.597.767-.9.051-.06 20.007-43.468 20.057-43.53 1.018-3.048-52.147 7.87-94.997-29.817-42.76-37.607-96.428-41.52-99.462-40.255 0 0-11.194 59.661-1.721 88.426Z"
+								clip-rule="evenodd" />
+							<path fill="#8FCBD2" fill-rule="evenodd"
+								d="M10.62 149.296c.352 1.459 1.505 2.602 2.635 3.596l59.612 52.442c1.129.995 2.434 1.846 3.905 2.158 95.631 20.265 124.449-52.817 133.708-77.351.14-.369.519-.601.77-.905-2.847 1.458-63.469 17.805-106.463-20.019C61.839 71.434 18.894 65.583 13.48 63c-21.76 54.206-9.104 60.355-2.86 86.296Z"
+								clip-rule="evenodd" />
+							<path stroke="#E8E8E8" stroke-width="3.908"
+								d="M208.617 85.25a6.393 6.393 0 0 1 2.069 3.698c5.215 29.89-2.57 61.76-23.997 86.614-27.908 32.374-71.132 43.489-109.467 32.087a10.368 10.368 0 0 1-3.902-2.16l-59.528-52.497a10.384 10.384 0 0 1-2.632-3.601C-4.815 113.101.537 69.269 28.465 37.565 50.395 12.673 81.49.662 112.228 2.118a6.389 6.389 0 0 1 3.926 1.59l92.463 81.542" />
+							<path fill="#EC7525" fill-rule="evenodd"
+								d="M131.829 158.539c-1.229-1.57-1.352-5.655-2.612-8.96-1.007-2.64-2.75-6.985-4.697-6.548-1.949.436-2.896 3.078-4.545 4.043-1.648.964-13.563 3.167-14.597 7.105-.497 1.895.526 2.842 1.761 2.805 1.234-.037 4.307-.478 5.681.26 1.374.738 19.43 3.756 19.43 3.756l-.421-2.461ZM108.25 161c-1.42 1.958-6.502 9.442-8.708 13.629-2.204 4.189-8.808 12.313-12.182 12.37-3.373.057-1.85-2.713-1.193-4.544.657-1.832 2.347-8.142 2.706-9.8.36-1.658 2.642-8.342 6.113-9.495 3.47-1.153 13.264-2.16 13.264-2.16ZM131.25 180.113c-1.783-.029-6.18 3.7-8.447 4.358-2.266.657-9.629 2.895-11.27.319-1.64-2.575 4.217-7.182 7.963-7.756 2.005-.308 3.942 1.607 6.195 1.417 2.253-.19 5.559 1.662 5.559 1.662Z"
+								clip-rule="evenodd" />
+							<path fill="#EC7525" fill-rule="evenodd"
+								d="M65.25 161.155c1.647 1.713 6.038 2.953 6.97 3.097.935.145 14.897 5.028 19.702 4.735 4.32-.264 11.992-5.918 16.328-5.988-2.994.289-3.488.018-4.47-1.456-1.139-1.708 1.354-1.146 2.402-2.543-1.523 1.061-7.092.89-8.796 1.096-1.705.205-10.359-.273-13.63-.072-3.272.2-8.243 1.108-10.594 1.253-2.354.144-6.878.016-7.912-.122Z"
+								clip-rule="evenodd" />
+							<path fill="#F08E4E" fill-rule="evenodd"
+								d="M104.116 158.571a.526.526 0 0 0-.682-.545c-3.046 1.009-8.525.398-14.576 1.004-6.654.668-17.416 3.676-18.622 5.071-1.207 1.395-3.014 5.384-1.25 5.66 1.766.275 21.084.519 25.126-.513 3.609-.922 8.804-5.653 10.955-7.552a.54.54 0 0 0-.048-.848c-.844-.555-.956-1.549-.903-2.277Z"
+								clip-rule="evenodd" />
+							<path fill="#F08E4E" fill-rule="evenodd"
+								d="M104.016 158.711c5.206-.286 18.401-3.849 26.966.239 2.621 1.251 13.894 9.824 16.225 12.407 2.332 2.582 4.448 7.226 3.977 8.501-1.716 4.641-14.338 2.935-18.941 2.348-4.602-.586-15.157-3.441-18.93-5.68-3.773-2.24-3.758-10.204-6.44-11.024-3.8-1.163-4.184-1.509-4.513-3.458-.345-2.04.099-3.248 1.656-3.333Z"
+								clip-rule="evenodd" />
+							<path fill="#EC7525" fill-rule="evenodd"
+								d="M118.199 171.459a.544.544 0 0 1-.252.721c-1.512.752-4.08 3.397-5.966 4.38-2.112 1.099-8.101-.04-8.688-1.445-.586-1.404 4.987-4.332 6.099-6.088 1.114-1.757 5.571-3.704 6.232-2.796.525.72 1.993 3.937 2.575 5.228Z"
+								clip-rule="evenodd" />
+							<path fill="#fff" fill-rule="evenodd"
+								d="M152.564 151.051a3.5 3.5 0 1 1 1.737 4.635 3.502 3.502 0 0 1-1.737-4.635ZM165.385 148.879a1.5 1.5 0 1 1 2.73 1.243 1.5 1.5 0 0 1-2.73-1.243ZM159.385 139.879a1.5 1.5 0 1 1 2.73 1.242 1.5 1.5 0 0 1-2.73-1.242Z"
+								clip-rule="evenodd" />
+							<path fill="#75B2BE" fill-rule="evenodd"
+								d="M223.25 136s16.546 12.043 15.274 22.849c-1.36 11.565 18.29 16.824 18.716 6.982.668-15.434-33.99-29.831-33.99-29.831Z"
+								clip-rule="evenodd" />
+							<path fill="#8FCBD2" fill-rule="evenodd"
+								d="M223.25 137s18.113 11.543 16.846 21.101c-1.479 11.158 19.178 20.135 16.992 4.521C254.916 147.117 223.25 137 223.25 137Z"
+								clip-rule="evenodd" />
+							<path fill="#75B2BE" fill-rule="evenodd"
+								d="M235.25 114s16.544-12.043 15.274-22.848c-1.361-11.567 18.29-16.825 18.716-6.983.668 15.434-33.99 29.831-33.99 29.831Z"
+								clip-rule="evenodd" />
+							<path fill="#8FCBD2" fill-rule="evenodd"
+								d="M235.25 114s18.113-11.543 16.846-21.1c-1.479-11.159 19.177-20.136 16.992-4.523C266.917 103.885 235.25 114 235.25 114Z"
+								clip-rule="evenodd" />
+							<path fill="#75B2BE" fill-rule="evenodd"
+								d="M315.25 170s18.037 8.356 18.69 18.661c.699 11.029 20.549 12.514 19.249 3.256C351.151 177.401 315.25 170 315.25 170Z"
+								clip-rule="evenodd" />
+							<mask id="a" width="38" height="28" x="316" y="170" maskUnits="userSpaceOnUse" style="mask-type:alpha">
+								<path fill="#fff" fill-rule="evenodd" d="M316.25 170h37v28h-37v-28Z" clip-rule="evenodd" />
+							</mask>
+							<g mask="url(#a)">
+								<path fill="#8FCBD2" fill-rule="evenodd"
+									d="M316.25 170s19.051 7.989 19.52 17.477c.545 11.079 21.545 16.13 16.777 1.38C347.81 174.209 316.25 170 316.25 170Z"
+									clip-rule="evenodd" />
+							</g>
+							<path fill="#75B2BE" fill-rule="evenodd"
+								d="M271.25 130s18.597 8.648 27.202 2.067c9.209-7.044 23.561 7.789 15.357 13.132C300.945 153.578 271.25 130 271.25 130Z"
+								clip-rule="evenodd" />
+							<path fill="#8FCBD2" fill-rule="evenodd"
+								d="M271.25 130s19.199 10.212 26.933 4.123c9.03-7.112 27.26 6.707 12.49 12.85C296.003 153.074 271.25 130 271.25 130Z"
+								clip-rule="evenodd" />
+							<path fill="#75B2BE" fill-rule="evenodd"
+								d="M268.25 157s18.759 20.909 12.781 33.556c-7.989 16.909 16.029 27.197 20.423 15.318C308.343 187.248 268.25 157 268.25 157Z"
+								clip-rule="evenodd" />
+							<path fill="#8FCBD2" fill-rule="evenodd"
+								d="M268.25 157s17.812 21.51 12.825 33.259c-6.469 15.243 17.172 26.192 19.871 12.499C304.942 182.477 268.25 157 268.25 157Z"
+								clip-rule="evenodd" />
+						</svg>
+						<p class="loading-error-message">
+							Help save Goldy and reload the page now, or try again in a few minutes.
+						</p>
+						<div class="loading-error-footer">
+							<button onclick="window.location.reload()"
+								class="loading-error-button loading-error-button--ripple">Reload Page</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="chrome-client-footer"></div>
+			<div class="chrome-footer chrome-footer-v2 grid" role="contentinfo">
+				<div class="chrome-footer-line chrome-footer-line--logo-flex">
+					<img src="/common/images/one/WebMD-ONE-footer-logo.svg" alt="WebMD Health Services"
+						class="chrome-footer-webmdone-logo chrome-footer-webmdonev2-logo" />
+					<ul class="chrome-footer__link-container">
+						<li class="footerLinkCell">
+							<a class="chrome-footer-item chrome-footer-link" href="/Policies">Policies</a>
+						</li>
+						<li class="footerLinkCell">
+							<a class="chrome-footer-item chrome-footer-link" href="/ContactUs">Contact Us</a>
+						</li>
+						<li class="chrome-footer-language-wrapper chrome-footer-link">
+							<style>
+								.lang-dialog-root .lang-btn--primary.lang-btn--primary {
+									background-color: #3557ff;
+									color: #FFFFFF;
+								}
+							</style>
+							<script>
+								window.ClientLocalization = { languageCode: "en-US" };
+							</script>
+							<button id="chrome-footer-language-button"
+								class="chrome-footer-language-link chrome-footer-language-link--toggle" aria-haspopup="true"
+								aria-controls="chrome-footer-language-button" aria-expanded="false">
+								Language:
+								English
+							</button>
+
+							<template id="lang-dialog-template">
+								<div role="presentation" class="lang-dialog-root">
+									<div class="lang-dialog-backdrop" tabIndex="0"></div>
+									<div tabIndex="0" data-sentinel="start"></div>
+									<div class="lang-dialog-container" role="dialog" aria-labelledby="lang-dialog-title">
+										<form id="lang-form" class="lang-dialog-paper">
+											<div class="lang-dialog-header">
+												<svg class="lang-title-icon" focusable="false" aria-hidden="true" viewBox="0 0 24 24"
+													data-testid="LanguageIcon">
+													<path fill="currentColor"
+														d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2m6.93 6h-2.95c-.32-1.25-.78-2.45-1.38-3.56 1.84.63 3.37 1.91 4.33 3.56M12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96M4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2 0 .68.06 1.34.14 2zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56-1.84-.63-3.37-1.9-4.33-3.56m2.95-8H5.08c.96-1.66 2.49-2.93 4.33-3.56C8.81 5.55 8.35 6.75 8.03 8M12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96M14.34 14H9.66c-.09-.66-.16-1.32-.16-2 0-.68.07-1.35.16-2h4.68c.09.65.16 1.32.16 2 0 .68-.07 1.34-.16 2m.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95c-.96 1.65-2.49 2.93-4.33 3.56M16.36 14c.08-.66.14-1.32.14-2 0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2z">
+													</path>
+												</svg>
+												<h2 id="lang-dialog-title" class="lang-dialog-title">Select Language</h2>
+											</div>
+											<!-- mp_trans_disable_start -->
+											<div class="lang-dialog-body">
+												<fieldset class="lang-items">
+													<label class="lang-item">
+														<input id="en-US" lang="en-US" type="radio" name="lang-choice" value="en-US" checked>
+														English
+													</label>
+													<label class="lang-item">
+														<input id="es-US" lang="es-US" type="radio" name="lang-choice" value="es-US">
+														Espa&#241;ol
+													</label>
+													<label class="lang-item">
+														<input id="zh" lang="zh" type="radio" name="lang-choice" value="zh">
+														&#20013;&#25991;&#65288;&#31616;&#20307;&#65289;
+													</label>
+													<label class="lang-item">
+														<input id="hi" lang="hi" type="radio" name="lang-choice" value="hi">
+														&#2361;&#2367;&#2306;&#2342;&#2368;
+													</label>
+													<label class="lang-item">
+														<input id="pt" lang="pt" type="radio" name="lang-choice" value="pt">
+														Portugu&#234;s
+													</label>
+													<label class="lang-item">
+														<input id="ja" lang="ja" type="radio" name="lang-choice" value="ja">
+														&#26085;&#26412;&#35486;
+													</label>
+													<label class="lang-item">
+														<input id="de" lang="de" type="radio" name="lang-choice" value="de">
+														Deutsch
+													</label>
+													<label class="lang-item">
+														<input id="ko" lang="ko" type="radio" name="lang-choice" value="ko">
+														&#54620;&#44397;&#51064;
+													</label>
+													<label class="lang-item">
+														<input id="fr" lang="fr" type="radio" name="lang-choice" value="fr">
+														Fran&#231;ais
+													</label>
+													<label class="lang-item">
+														<input id="vi" lang="vi" type="radio" name="lang-choice" value="vi">
+														Ti&#7871;ng Vi&#7879;t
+													</label>
+													<label class="lang-item">
+														<input id="it" lang="it" type="radio" name="lang-choice" value="it">
+														Italiano
+													</label>
+													<label class="lang-item">
+														<input id="pl" lang="pl" type="radio" name="lang-choice" value="pl">
+														Polski
+													</label>
+													<label class="lang-item">
+														<input id="ar" lang="ar" type="radio" name="lang-choice" value="ar">
+														&#1593;&#1585;&#1576;&#1610;
+													</label>
+													<label class="lang-item">
+														<input id="en-GB" lang="en-GB" type="radio" name="lang-choice" value="en-GB">
+														UK English
+													</label>
+													<label class="lang-item">
+														<input id="sk" lang="sk" type="radio" name="lang-choice" value="sk">
+														Slovensk&#253;
+													</label>
+													<label class="lang-item">
+														<input id="pt-PT" lang="pt-PT" type="radio" name="lang-choice" value="pt-PT">
+														Continental Portugu&#234;s
+													</label>
+													<label class="lang-item">
+														<input id="fr-CA" lang="fr-CA" type="radio" name="lang-choice" value="fr-CA">
+														Fran&#231;ais canadien
+													</label>
+													<label class="lang-item">
+														<input id="th" lang="th" type="radio" name="lang-choice" value="th">
+														&#3652;&#3607;&#3618;
+													</label>
+													<label class="lang-item">
+														<input id="he" lang="he" type="radio" name="lang-choice" value="he">
+														&#1506;&#1460;&#1489;&#1512;&#1460;&#1497;&#1514;
+													</label>
+													<label class="lang-item">
+														<input id="nl" lang="nl" type="radio" name="lang-choice" value="nl">
+														Nederlands
+													</label>
+													<label class="lang-item">
+														<input id="id" lang="id" type="radio" name="lang-choice" value="id">
+														Bahasa Indonesia
+													</label>
+													<label class="lang-item">
+														<input id="tr" lang="tr" type="radio" name="lang-choice" value="tr">
+														T&#252;rk&#231;e
+													</label>
+												</fieldset>
+											</div>
+											<!-- mp_trans_disable_end -->
+											<div class="lang-dialog-actions">
+												<button type="button" class="lang-btn lang-btn--default" id="lang-cancel-btn">Cancel</button>
+												<button type="submit" class="lang-btn lang-btn--primary" id="lang-apply-btn">Apply</button>
+											</div>
+											<input type="hidden" name="tzoffset" value="0"></input>
+											<script type="text/javascript" language="javascript">
+												var hiddenInput = document.getElementById('tzoffset');
+												if (hiddenInput != null) hiddenInput.value = new Date().getTimezoneOffset();
+											</script>
+										</form>
+									</div>
+									<div tabIndex="0" data-sentinel="end"></div>
+								</div>
+							</template>
+
+							<!-- mp_trans_disable_start -->
+							<script>
+								window.multiLanguage = {
+									supportsMultiLanguage: true,
+									menuItems: [{ regioncode: 'en-US', label: 'English' },
+									{ regioncode: 'es-US', label: 'Español' },
+									{ regioncode: 'zh', label: '\u4e2d\u6587\uff08\u7b80\u4f53\uff09' },
+									{ regioncode: 'hi', label: '\u0939\u093f\u0902\u0926\u0940' },
+									{ regioncode: 'pt', label: 'Português' },
+									{ regioncode: 'ja', label: '日本語' },
+									{ regioncode: 'de', label: 'Deutsch' },
+									{ regioncode: 'ko', label: '\ud55c\uad6d\uc778' },
+									{ regioncode: 'fr', label: 'Français' },
+									{ regioncode: 'vi', label: 'Tiếng Việt' },
+									{ regioncode: 'it', label: 'Italiano' },
+									{ regioncode: 'pl', label: 'Polski' },
+									{ regioncode: 'ar', label: '\u0639\u0631\u0628\u064a' },
+									{ regioncode: 'en-GB', label: 'UK English' },
+									{ regioncode: 'sk', label: 'Slovenský' },
+									{ regioncode: 'pt-PT', label: 'Continental Português' },
+									{ regioncode: 'fr-CA', label: 'Français canadien' },
+									{ regioncode: 'th', label: '\u0e44\u0e17\u0e22' },
+									{ regioncode: 'he', label: 'עִברִית' },
+									{ regioncode: 'nl', label: 'Nederlands' },
+									{ regioncode: 'id', label: 'Bahasa Indonesia' },
+									{ regioncode: 'tr', label: 'Türkçe' },
+									],
+									buttonLabelMap: {
+										'en-US': 'English',
+										'es-US': 'Español',
+										'zh': '\u4e2d\u6587\uff08\u7b80\u4f53\uff09',
+										'hi': '\u0939\u093f\u0902\u0926\u0940',
+										'pt': 'Português',
+										'ja': '日本語',
+										'de': 'Deutsch',
+										'ko': '\ud55c\uad6d\uc778',
+										'fr': 'Français',
+										'vi': 'Tiếng Việt',
+										'it': 'Italiano',
+										'pl': 'Polski',
+										'ar': '\u0639\u0631\u0628\u064a',
+										'en-GB': 'UK English',
+										'sk': 'Slovenský',
+										'pt-PT': 'Continental Português',
+										'fr-CA': 'Français canadien',
+										'th': '\u0e44\u0e17\u0e22',
+										'he': 'עִברִית',
+										'nl': 'Nederlands',
+										'id': 'Bahasa Indonesia',
+										'tr': 'Türkçe',
+									},
+									currentRegion: 'en-US',
+									convertUrlTo: {
+										'en-US': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://www.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'es-US': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://es.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'zh': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://zh.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'hi': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://hi.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'pt': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://pt.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'ja': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://ja.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'de': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://de.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'ko': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://ko.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'fr': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://fr.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'vi': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://vi.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'it': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://it.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'pl': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://pl.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'ar': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://ar.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'en-GB': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://enuk.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'sk': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://sk.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'pt-PT': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://ptpt.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'fr-CA': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://frca.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'th': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://th.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'he': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://he.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'nl': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://nl.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'id': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://id.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+										'tr': (function (url) { return url.replace(/^(?:https?:)?\/\/(?!10[.]|qa00[.]|pdx1[.]|iad1[.]|internal(?:west|east)[.]|vip-)(?:(?:ar|de|enuk|es|fr|frca|he|hi|id|it|ja|ko|nl|pl|pt|ptpt|sk|th|tr|vi|www|zh)[.])?/i, "https://tr.").replace(/^(?:https?:)?\/\/www[.](?!webmdhealth[.]com)/i, "https://") }),
+									}
+								};
+							</script>
+							<script>//BEGIN RESOURCE /Views/Shared/WebMDOne/WebMDOneLanguageButton.js
+								(function () {
+									const logLanguageSelect = (language) => window.amplitude?.getInstance().logEvent("Footer - Language Selector", { language });
+									const qs = (sel, ctx) => (ctx ?? document).querySelector(sel);
+
+									class LanguageMenu {
+										/** @type {HTMLElement|null} */
+										#ToggleButton;
+
+										/** @type {DocumentFragment|null} */
+										#DialogTemplateRef;
+
+										/** @type {HTMLElement|null} */
+										#DialogRef;
+
+										constructor() {
+											this.#DialogTemplateRef = null;
+											this.#DialogRef = null;
+											this.#ToggleButton = qs("#chrome-footer-language-button");
+											this.#DialogTemplateRef = qs("#lang-dialog-template");
+											this.#ToggleButton.addEventListener("click", this.#OnClickLanguageButton)
+										}
+
+										#OpenDialog = () => {
+											this.#DialogRef = this.#CreateDialog();
+											document.body.appendChild(this.#DialogRef);
+											setTimeout(() => qs(".lang-dialog-backdrop").classList.add("lang-dialog-backdrop--in"), 15);
+											this.#FocusInitialElement();
+											this.#FreezeViewport();
+											document.body.addEventListener("keydown", this.#CloseOnEscape)
+										};
+
+										#CloseDialog = () => {
+											if (this.#DialogRef !== null) {
+												qs(".lang-dialog-backdrop", this.#DialogRef).classList.remove("lang-dialog-backdrop--in");
+
+												// delay for transition duration before removing from dom
+												setTimeout(() => {
+													this.#ToggleButton.focus(); document.body.removeChild(this.#DialogRef);
+													this.#DialogRef = null;
+													document.body.removeEventListener("keydown", this.#CloseOnEscape);
+													this.#ThawViewport();
+												}, 150);
+											}
+										};
+
+										#OnClickLanguageButton = () => {
+											if (this.#DialogRef === null) {
+												if (this.#DialogTemplateRef === null) {
+													throw new Error("Dialog template not found");
+												}
+												this.#OpenDialog();
+											}
+										};
+
+										#CloseOnEscape = (e) => {
+											if (e.key === "Escape") {
+												this.#CloseDialog();
+											}
+										};
+
+										#FocusInitialElement = () => {
+											const el = this.#FindCheckedRadioButton();
+											el?.scrollIntoView({ smooth: true });
+											setTimeout(() => { el?.focus(); }, 20);
+										};
+
+										#FindCheckedRadioButton = () => qs("input:checked[type=\"radio\"]", this.#DialogRef);
+
+										#FreezeViewport = () => { qs("html").style.overflow = "hidden"; };
+
+										#ThawViewport = () => { qs("html").style.overflow = ""; };
+
+										#CreateDialog = () => {
+											// clone template and save ref to root element div#lang-dialog-root
+											const dlg = this.#DialogTemplateRef.content.cloneNode(true).children[0];
+
+											// submit and cancel buttons
+											qs("#lang-cancel-btn", dlg).addEventListener("click", () => { this.#CloseDialog(); })
+											qs("#lang-form", dlg).addEventListener("submit", (e) => {
+												e.preventDefault();
+												const data = new FormData(e.target);
+												if (data.has("lang-choice")) {
+													this.#NavigateToRegionSite(data.get("lang-choice"));
+												}
+											});
+
+											// trap focus in dialog
+											qs("div[data-sentinel=\"start\"]", dlg).addEventListener("focus", () => { this.#FindCheckedRadioButton()?.focus(); });
+											qs("div[data-sentinel=\"end\"]", dlg).addEventListener("focus", (e) => { qs("button[type=\"submit\"]", dlg)?.focus(); });
+
+											return dlg;
+										};
+
+
+										#NavigateToRegionSite(regionCode) {
+											if (regionCode) {
+												logLanguageSelect(regionCode);
+												window.location.href = window.multiLanguage.convertUrlTo[regionCode](window.location.href);
+											}
+										}
+
+										static Initialize = () => new LanguageMenu();
+									}
+
+									LanguageMenu.Initialize();
+								}())
+
+							</script>
+
+						</li>
+					</ul>
+				</div>
+				<div class="chrome-footer-line chrome-footer-legal">
+					<div class="footerLinkCell">&copy; 2026 &nbsp; </div>
+					<div class="footerLinkCell chrome-footer-link"><a href="https://www.webmdhealthservices.com/"
+							target="WebMDWindow">WebMD Health Services Group, Inc. &nbsp;</a></div> All rights reserved.
+				</div>
+				<div class="chrome-footer-line chrome-footer-legal">WebMD does not provide medical advice, diagnosis or
+					treatment.</div>
+				<div class="chrome-footer-line chrome-footer-legal chrome-footer-link"><a href="/Policies/Terms">See additional
+						information.</a></div>
+				<div class="accreditation-footer">
+					<ul class="accreditation-footer-item-group">
+						<li>
+							<a class="accreditation-footer-item"
+								href="javascript:new window.Interstitial({openPopupWindow: false}).Warn('https://www.ncqa.org/')"
+								title="NCQA Certification - Population Health Program - Support for healthy living">
+								<img width="60px" src="/main/images/ncqa-health-information-product.png"
+									alt="NCQA Certification - Population Health Program - Support for healthy living" />
+							</a>
+						</li>
+						<li>
+							<a class="accreditation-footer-item whp-cert"
+								href="javascript:new window.Interstitial({openPopupWindow: false}).Warn('https://www.ncqa.org/')"
+								title="NCQA Certification - Wellness and Health Promotion - Support for healthy living">
+								<img width="64px" style="transform: translateY(-4px)" src="/main/images/ncqa-whp-certification.png"
+									alt="NCQA Certification - Wellness and Health Promotion - Support for healthy living" />
+							</a>
+						</li>
+						<li>
+							<a class="accreditation-footer-item"
+								href="javascript:new window.Interstitial({openPopupWindow: false}).Warn('https://accreditnet.urac.org/directory/#/accreditation/HWS-4/info')"
+								title="URAC Health Web Site Accreditation">
+								<img width="65px" style="transform: translateY(-5px)"
+									src="/main/images/URAC_2028_Acreditation_Seal_Web.jpg" alt="URAC: Accredited Health Website" />
+							</a>
+						</li>
+						<li>
+							<a class="accreditation-footer-item"
+								href="javascript:new window.Interstitial({openPopupWindow: false}).Warn('http://www.aicpa.org/soc4so')"
+								title="SOC for Service Organizations – Service Organizations Logo">
+								<img width="60px" src="/main/images/soc4so.png"
+									alt="SOC for Service Organizations – Service Organizations Logo" />
+							</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		window.chromeOne = (function () {
+
+			function getElement(selector) {
+				return document.querySelector(selector);
+			}
+
+			function postToMobileApp(type, message) {
+				var mobilePrefix = 'mobile';
+				var targetOrigin = '*';
+				if (window.postMessage && type) {
+					window.postMessage([mobilePrefix, type, message].join('_'), targetOrigin);
+				}
+			}
+
+			function addClassToElement(elementClassName, className) {
+				var navItems = document.getElementsByClassName(elementClassName);
+				for (var i = 0; i < navItems.length; i++) {
+					navItems[i].classList.add(className);
+					navItems[i].setAttribute('aria-current', (className === 'selected').toString());
+				}
+			}
+
+			function removeClassFromElement(elementClassName, className) {
+				var allNavElements = document.getElementsByClassName(elementClassName);
+				for (var i = 0; i < allNavElements.length; i++) {
+					allNavElements[i].classList.remove(className);
+				}
+			}
+
+			function unselectChromeMenuItems() {
+				removeClassFromElement("chrome-nav-item", "selected");
+			}
+
+			function selectChromeMenuItem(className) {
+				var navItems = document.getElementsByClassName(className);
+
+				if (navItems.length > 0) {
+					unselectChromeMenuItems();
+					addClassToElement(className, "selected");
+				}
+			}
+
+			function unHighlightChromeMenuItems() {
+				removeClassFromElement("chrome-nav-item", "highlighted");
+			}
+
+			function highlightChromeMenuItem(name) {
+				unHighlightChromeMenuItems();
+				addClassToElement(name, "highlighted");
+			}
+
+			function refreshMessagesIndicator() {
+				var notificationBerryElements = document.querySelectorAll(".chrome-nav-messages-berry, .chrome-nav-berry-messages, .chrome-nav-berry-coaching");
+				if (notificationBerryElements.length === 0) return;
+
+				refreshNotificationIndicators();
+			}
+
+			async function refreshNotificationIndicators() {
+				hideNotificationsClass("chrome-nav-messages-berry");
+				hideNotificationsClass("chrome-nav-berry-messages");
+				hideNotificationsClass("chrome-nav-berry-coaching");
+
+				let secureMessageRes = await fetch('/Messaging/MessageCenter/Api/UnreadMessageCount').then(response => response.json());
+				postToMobileApp('unreadMessageCount', String(secureMessageRes.UnreadMessageCount));
+
+				if (secureMessageRes.UnreadMessageCount > 0) {
+					showNotificationsClassWithMessage("chrome-nav-berry-messages", secureMessageRes.UnreadMessageCount + ' new');
+					setAriaLabelForMessages('chrome-nav-Messages', 'aria-label', `you have ${secureMessageRes.UnreadMessageCount} unread secure messages`);
+				}
+
+				let coachConnectRes = await fetch('/HealthCoaching/Chrome/Connect/GetUnreadMessagesCount').then(response => response.json());
+				postToMobileApp('unreadCoachConnectMessageCount', String(coachConnectRes.messageCount));
+
+				if (coachConnectRes.messageCount > 0) {
+					showNotificationsClassWithMessage("chrome-nav-berry-coaching", coachConnectRes.messageCount + ' new');
+					setAriaLabelForMessages('chrome-nav-Coach Connect', 'aria-label', `you have ${coachConnectRes.messageCount} unread Coach Connect messages`);
+				}
+
+				let totalCount = secureMessageRes.UnreadMessageCount + coachConnectRes.messageCount;
+				if (totalCount > 0) {
+					showNotificationsClassWithMessage("chrome-nav-messages-berry", totalCount);
+					setAriaLabelForMessages('notification-menu-toggle', 'aria-label', `you have ${totalCount} unread messages`);
+				}
+			}
+
+			function setAriaLabelForMessages(id, aria, message) {
+				var elementId = document.getElementById(id);
+				if (!elementId) return;
+
+				elementId.setAttribute(aria, message);
+			}
+
+			function hideNotificationsClass(className) {
+				var elements = document.getElementsByClassName(className);
+				if (!elements) return;
+
+				for (var i = 0; i < elements.length; ++i) {
+					elements[i].style.display = "none";
+					if (elements[i].parentElement)
+						elements[i].parentElement.removeAttribute('aria-label');
+				}
+			}
+
+			function showNotificationsClassWithMessage(className, message) {
+				var elements = document.getElementsByClassName(className);
+				if (!elements) return;
+
+				for (var i = 0; i < elements.length; ++i) {
+					elements[i].style.display = "block";
+					elements[i].innerHTML = message;
+					if (elements[i].parentElement)
+						elements[i].parentElement.setAttribute('aria-label', elements[i].id);
+				}
+			}
+
+			// This is an arbitrary delay, only meant to allow other (presumably more important) requests to take place first
+			window.setTimeout(refreshMessagesIndicator, 2500);
+
+			function logAmplitudeEvent(eventType, eventProperties) {
+				if (!window.amplitude) {
+					return;
+				}
+				var amplitudeInstance = window.amplitude.getInstance();
+				amplitudeInstance.logEvent(eventType, eventProperties);
+			}
+
+			function logChromeNavClick(navId) {
+				if (navId === 'Coaching') {
+					logAmplitudeEvent("Message Menu - Coach Connect Clicked", {});
+				} else {
+					logAmplitudeEvent("Chrome - Navigation - Click", { NavID: navId, language: getCurrentLanguage() });
+				}
+			}
+
+			function logNotificationOpened() {
+				logAmplitudeEvent("Message Menu - Envelope Clicked", {});
+
+				let elements = document.getElementsByClassName("chrome-nav-berry-coaching");
+				let isCoachConnectBerryVisible = false;
+				for (let i = 0; i < elements.length; ++i)
+					isCoachConnectBerryVisible = isCoachConnectBerryVisible || elements[i].style.display === "block";
+				if (isCoachConnectBerryVisible) {
+					logAmplitudeEvent("Message Menu - Coach Connect Unread Seen", {});
+				}
+			}
+
+			function getCurrentLanguage() {
+				if (window.multiLanguage && window.multiLanguage.supportsMultiLanguage && window.multiLanguage.currentRegion) {
+					return window.multiLanguage.currentRegion;
+				}
+
+				return "en";
+			}
+
+			function openKebabMenu() {
+				var kebabMenu = getElement("#kebab-menu");
+				kebabMenu.classList.add("chrome-menu--open");
+			}
+
+			function closeKebabMenu() {
+				var kebabMenu = getElement("#kebab-menu");
+				kebabMenu.classList.remove("chrome-menu--open");
+			}
+
+			var locations = Object.freeze({ NONE: 0, SEGMENT: 1, KEBAB: 2 });
+
+			function getItemLocation(name) {
+				var kebabMenu = document.getElementById("kebab-menu");
+				var segmentMenu = document.getElementById("segment-menu");
+
+				if (kebabMenu.querySelector(".chrome-nav-" + name.toLowerCase())) {
+					return locations.KEBAB;
+				}
+
+				if (segmentMenu.querySelector(".chrome-nav-" + name.toLowerCase())) {
+					return locations.SEGMENT;
+				}
+
+				return location.NONE;
+			}
+
+			return {
+				version: 2,
+				selectMenuItem: function (name) {
+					selectChromeMenuItem("chrome-nav-" + name.toLowerCase());
+					postToMobileApp('navigation', name.toLowerCase());
+				},
+				clearSelectedMenuItem: function () {
+					unselectChromeMenuItems();
+					postToMobileApp('navigation', '');
+				},
+				highlightChromeMenuItem: function (name) { highlightChromeMenuItem("chrome-nav-" + name.toLowerCase()); },
+				unHighlightChromeMenuItems: unHighlightChromeMenuItems,
+				refreshMessagesIndicator: refreshMessagesIndicator,
+				logChromeNavClick: logChromeNavClick,
+				openKebabMenu: openKebabMenu,
+				closeKebabMenu: closeKebabMenu,
+				getItemLocation: getItemLocation,
+				locations: locations,
+				logNotificationOpened: logNotificationOpened
+			};
+		}());
+
+		//# sourceURL=/Views/Shared/WebMDOne/WebMDOneChromeOneV2.js</script>
+	<script>//BEGIN RESOURCE /Views/Shared/WebMDOne/WebMDOneChromeV2.js
+		(function () {
+			const MENU_FOCUS_CLASS = "focus-link";
+			const MENU_FOCUS_SELECTOR = "." + MENU_FOCUS_CLASS;
+			const MENU_LIST_ITEM_SELECTOR = "a";
+			const LIST_ITEM_SELECTOR = "li[role=none]";
+
+			/**
+			 * Pass open event between menu buttons
+			 * @class
+			 */
+			class MenuButtonOpenEvents {
+				constructor() {
+					this.subscribers = [];
+				}
+
+				/** @param {() => void} subscriberFn */
+				subscribe = (subscriberFn) => { this.subscribers.push(subscriberFn); };
+
+				/** @param {string} menuName */
+				open = (menuName) => { this.subscribers.forEach((sub) => { sub.call(null, menuName); }); };
+			}
+
+			class MenuButton {
+				/** Behavior for chrome MenuButtons
+				 * @param {Object} config
+				 * @param {string} config.name
+				 * @param {HTMLElement} config.buttonNode
+				 * @param {HTMLElement} config.menuNode
+				 * @param {() => void} config.openMenu
+				 * @param {() => void} config.closeMenu
+				 * @param {MenuButtonOpenEvents|undefined} config.menuButtonOpenEvents
+				 * @requires window.chromeOne
+				 */
+				constructor(config) {
+					const { name, buttonNode, menuNode, openMenu, closeMenu, menuButtonOpenEvents } = config;
+					this.MenuName = name;
+					this.OpenMenu = openMenu;
+					this.CloseMenu = closeMenu;
+					this.ButtonNode = buttonNode;
+					this.MenuNode = menuNode;
+					this.ClickAwayListener = null;
+					this.MenuButtonOpenEvents = menuButtonOpenEvents
+					this.Setup();
+				}
+
+				Setup() {
+					this.ButtonNode.setAttribute("aria-expanded", "false");
+					this.ButtonNode.addEventListener("click", this.OnToggleClick);
+					this.MenuNode.addEventListener("keydown", this.OnMenuKeydown);
+					if (this.MenuButtonOpenEvents !== undefined) {
+						this.SubscribeToMenuButtonOpenEvents();
+					}
+				}
+
+				SubscribeToMenuButtonOpenEvents = () => {
+					this.MenuButtonOpenEvents.subscribe((owner) => {
+						if (this.MenuName !== owner && this.IsMenuOpen()) {
+							this.ToggleMenu()
+						}
+					});
+				};
+
+				OnToggleClick = (e) => {
+					e.stopPropagation();
+					this.ToggleMenu();
+				};
+
+				OnMenuKeydown = (e) => {
+					let stopEvent = false;
+					const key = e.key;
+					if (e.ctrlKey || e.altKey || e.metaKey) {
+						return;
+					}
+
+					switch (key) {
+						case "Up":
+						case "ArrowUp":
+							this.FocusSiblingMenuItem("previousLink");
+							stopEvent = true;
+							break;
+						case "Down":
+						case "ArrowDown":
+							this.FocusSiblingMenuItem("nextLink");
+							stopEvent = true;
+							break;
+						case "Tab":
+						case "Escape":
+							this.ToggleMenu();
+							break;
+					}
+
+					if (stopEvent) {
+						e.stopPropagation();
+						e.preventDefault();
+					}
+				};
+
+				IsMenuOpen = () => this.MenuNode.classList.contains("chrome-menu--open");
+
+				PublishOpen = () => {
+					if (this.MenuButtonOpenEvents !== undefined) {
+						this.MenuButtonOpenEvents.open(this.MenuName);
+					}
+				};
+
+				ToggleMenu = () => {
+					if (this.IsMenuOpen()) {
+						document.body.removeEventListener("click", this.OnBodyClick);
+						this.ButtonNode.setAttribute("aria-expanded", "false");
+						this.CloseMenu();
+					} else {
+						this.OpenMenu();
+						this.FocusNavItem(this.MenuNode.querySelector("[aria-current=true]"));
+						this.PublishOpen();
+						this.ButtonNode.setAttribute("aria-expanded", "true");
+						document.body.addEventListener("click", this.OnBodyClick);
+					}
+				};
+
+				OnBodyClick = (e) => {
+					if (!this.MenuNode.contains(e.target)) {
+						this.ToggleMenu();
+					}
+				};
+
+				/** @param {HTMLElement|null} selected */
+				FocusNavItem = (selected) => {
+					const focusLink = selected !== null ? selected : this.MenuNode.querySelector(MENU_LIST_ITEM_SELECTOR);
+					const currentFocus = this.MenuNode.querySelector(MENU_FOCUS_SELECTOR);
+					currentFocus?.classList.remove(MENU_FOCUS_CLASS);
+					focusLink.focus();
+					focusLink.classList.add(MENU_FOCUS_CLASS);
+				};
+
+				/** @param {"previousLink"|"nextLink"} direction */
+				FocusSiblingMenuItem = (direction) => {
+					const current = this.MenuNode.querySelector(MENU_FOCUS_SELECTOR);
+					const li = current.closest(LIST_ITEM_SELECTOR);
+					const targetLi = li[direction === "previousLink" ? "previousElementSibling" : "nextElementSibling"];
+					const targetLink = targetLi?.querySelector(MENU_LIST_ITEM_SELECTOR) ?? null;
+					if (targetLink !== null) {
+						current.classList.remove(MENU_FOCUS_CLASS);
+						this.FocusNavItem(targetLink);
+					}
+				};
+			}
+
+			function SetupMenuButtons() {
+				const messagesToggle = document.querySelector("#notification-menu-toggle");
+				const kebabToggle = document.querySelector("#kebab-menu-toggle");
+				let menuButtonOpenEvents;
+
+				if (messagesToggle !== null && kebabToggle !== null) {
+					menuButtonOpenEvents = new MenuButtonOpenEvents();
+				}
+
+				if (messagesToggle !== null) {
+					const notificationMenu = document.querySelector("#notification-menu");
+					new MenuButton({
+						name: "notificationMenu",
+						buttonNode: messagesToggle,
+						menuNode: notificationMenu,
+						openMenu: () => notificationMenu.classList.add("chrome-menu--open"),
+						closeMenu: () => notificationMenu.classList.remove("chrome-menu--open"),
+						menuButtonOpenEvents
+					}
+					);
+				}
+
+				if (kebabToggle !== null) {
+					new MenuButton({
+						name: "kebabMenu",
+						buttonNode: kebabToggle,
+						menuNode: document.querySelector("#kebab-menu"),
+						openMenu: window.chromeOne.openKebabMenu,
+						closeMenu: window.chromeOne.closeKebabMenu,
+						menuButtonOpenEvents
+					}
+					);
+				}
+			}
+			SetupMenuButtons();
+
+			function getScrollY() {
+				return window.scrollY || window.pageYOffset;
+			}
+
+			function throttle(fn, threshold, scope) {
+				threshold || (threshold = 250);
+				var last, deferTimer;
+
+				return function () {
+					var context = scope || this;
+					var now = +new Date, args = arguments;
+					if (last && now < last + threshold) {
+						// hold on to it
+						clearTimeout(deferTimer);
+						deferTimer = setTimeout(function () {
+							last = now;
+							fn.apply(context, args);
+						}, threshold);
+					} else {
+						last = now;
+						fn.apply(context, args);
+					}
+				};
+			}
+
+			function setupFloatingMenu() {
+				const FLOAT_CLASS = 'chrome-header-top-row--floating';
+				const topHeaderBar = document.querySelector('#chrome-header-top-row');
+				function handleScroll() {
+					if (getScrollY() <= 0) {
+						topHeaderBar.classList.remove(FLOAT_CLASS);
+					} else {
+						topHeaderBar.classList.add(FLOAT_CLASS);
+					}
+				}
+
+				// don't bind if no top nav bar
+				if (topHeaderBar) {
+					document.addEventListener('scroll', throttle(handleScroll, 60));
+				}
+			}
+			setupFloatingMenu();
+		}());
+
+	</script>
+
+
+
+	<script>window.personContext = {}</script>
+
+	<!-- <script type="text/javascript" src="/!home/public/homepage-vendor.js"></script> -->
+	<!-- <script type="text/javascript" src="/!home/public/homepage.js"></script> -->
+	<!-- <script type="text/javascript">
+	try {
+		window.initializeHome(
+			document.getElementById("root"),
+			{"Name":"__RequestVerificationToken","Value":"asdf"},
+			{"FirstName":"moo","LastName":"cow","Birthdate":"1970-01-01","AgeInYears":30,"Gender":"Male","BasePath":"Home","ClientBrandingColorHex":"#3557ff","EnabledTools":{"384":{"ToolName":"Rewards"},"10000032":{"ToolName":"Daily Habits"},"69":{"ToolName":"Health Trackers"},"10001759":{"ToolName":"OneCommunity"},"60000022":{"ToolName":"Device and App Connection Center"},"10001118":{"ToolName":"Wellness Media Library"},"10001119":{"ToolName":"Beyond Well Solutions"},"64001399":{"ToolName":"Content Hub"},"64002126":{"ToolName":"SundaySky Vendor Integration"},"10002737":{"ToolName":"Health Goals"}},"SponsorPromoBanner":{"DashboardColor":"SponsorColor","ValueOrNull":null},"IsPluginMode":false,"IsWaysApp":false,"IsTestUser":true,"IsInternationalClient":false,"IsDefaultLanguage":true,"PreferredMeasurement":"Imperial","BeyondWellMappingName":"","AreCoachingGuidesDisabled":false,"EnableHACardSundaySkyVideo":true,"EnableHealthTopicsArticlesOnHomePage":false,"EnableDiscoverOnHomepage":true,"IsHAEnabled":true,"SponsorTakeActionConfiguration":{"FromMySponsorText":"FROM TITAN"}}
+		);
+	} catch(e) {
+		document.body.classList.add("has-loading-error");
+		throw e;
+	}
+</script> -->
+
+</body>
+
+</html>

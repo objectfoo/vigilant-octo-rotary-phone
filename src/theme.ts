@@ -1,0 +1,121 @@
+import { createTheme, type ThemeOptions } from "@mui/material/styles";
+
+const tokens: ThemeOptions = {
+  "palette": {
+    "mode": "light",
+    "contrastThreshold": 4.5,
+    "primary": {
+      "main": "#3557FF",
+      "contrastText": "#FFFFFF"
+    },
+    "secondary": {
+      "main": "#898EB6",
+      "contrastText": "#FFFFFF"
+    },
+    "error": {
+      "light": "#bf334c",
+      "main": "#b00020",
+      "dark": "#8C0019",
+      "contrastText": "#FFFFFF"
+    },
+    "info": {
+      "main": "#0288d1",
+      "light": "#03a9f4",
+      "dark": "#01579b",
+      "contrastText": "#FFFFFF"
+    },
+    "success": {
+      "light": "#84bd00",
+      "main": "#1a6500",
+      "dark": "#103e00",
+      "contrastText": "#FFFFFF"
+    },
+    "warning": {
+      "light": "#ffd683",
+      "main": "#ffbf3f",
+      "dark": "#c77700",
+      "contrastText": "#000000"
+    },
+    "text": {
+      "primary": "#000000",
+      "secondary": "#494949",
+      "disabled": "#757575"
+    },
+    "action": {
+      "disabled": "rgba(0, 0, 0, 0.56)",
+      "disabledBackground": "rgba(0, 0, 0, 0.1)",
+      "hoverOpacity": 0.033
+    }
+  },
+  "typography": {
+    "fontFamily": "Lato, system-ui, Segoe UI, Helvetica Neue, Helvetica, sans-serif",
+    "fontWeightMedium": 600,
+    "h1": {
+      "fontSize": "48px",
+      "letterSpacing": "0.24992px",
+      "fontWeight": 300
+    },
+    "h2": {
+      "fontSize": "36px",
+      "letterSpacing": "-0.13px",
+      "fontWeight": 300
+    },
+    "h3": {
+      "fontSize": "28px",
+      "fontWeight": 400
+    },
+    "h4": {
+      "fontSize": "22px",
+      "letterSpacing": "0.25px",
+      "fontWeight": 400
+    },
+    "h5": {
+      "fontSize": "20px",
+      "letterSpacing": "0.25px",
+      "fontWeight": 400
+    },
+    "h6": {
+      "fontSize": "18px",
+      "letterSpacing": "0.25px",
+      "fontWeight": 400
+    },
+    "subtitle1": {
+      "fontSize": "16px",
+      "letterSpacing": "0.15px",
+      "fontWeight": 400
+    },
+    "subtitle2": {
+      "fontSize": "14px",
+      "letterSpacing": "0.1px",
+      "fontWeight": 400
+    },
+    "body1": {
+      "fontSize": "16px",
+      "letterSpacing": "0.15px",
+      "fontWeight": 400
+    },
+    "body2": {
+      "fontSize": "14px",
+      "letterSpacing": "0.1px"
+    },
+    "button": {
+      "fontSize": "14px",
+      "letterSpacing": "0.45px",
+      "fontWeight": 600
+    },
+    "caption": {
+      "fontSize": "12px",
+      "letterSpacing": "0.53px"
+    },
+    "overline": {
+      "fontSize": "12px",
+      "letterSpacing": "1.33px"
+    }
+  },
+  "spacing": 8
+};
+
+export default createTheme({
+	cssVariables: { disableCssColorScheme: true },
+	...tokens,
+});
